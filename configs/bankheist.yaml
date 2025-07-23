@@ -1,0 +1,70 @@
+# Hyperparameters and configuration settings for Breakout environment
+
+env:
+  name: "ALE/BankHeist-v5"
+  grayscale: true 
+  action_repeat: 4
+  clip_rewards: 'tanh'
+  eval_noise: 0.0
+
+replay:
+  capacity: 500_000  
+  sequence_length: 50
+  oversample_ends: true
+
+model: 
+  embed_dim: 1536
+  recon_scale: 1
+  pred_discount: True
+  # reward_scale: 1.0
+  discount_scale: 5.0
+  
+  rssm:
+    category_size: 32
+    class_size: 32
+    deter_size: 600
+    hidden_size: 600
+    kl_balancing_alpha: 0.8
+    kl_beta: 0.1
+    kl_free: 0.0
+    min_std: 0.1
+    
+  actor_critic:
+    hidden_size: 400
+    entropy_coeff: 1e-3
+
+training:
+  total_env_frames: 12_001_000
+  burn_in_frames: 50_000
+  batch_size: 50
+  world_model_update_interval: 16
+  world_model_lr: 1e-4
+  actor_lr: 4e-5
+  critic_lr: 1e-4
+  model_grad_clip: 100.0
+  actor_grad_clip: 100.0
+  value_grad_clip: 100.0
+  imagination_horizon: 15
+  imag_gradient: 'both'
+  imag_gradient_mix: 'linear(0.8, 1.0, 5000000)'
+  lambda_return: 0.95
+  discount: 0.999
+  slow_value_target: True
+  slow_target_update: 100
+  slow_target_fraction: 1.0
+  checkpoint_interval_steps: 500_000
+  weight_decay: 1e-6
+  eval_every: 100_000
+  eval_eps: 10
+  device: "cuda:0"
+
+logging:
+  wandb: true
+  amp: true
+  checkpoint_dir: "checkpoints-bank_heist-v18"
+  save_recon_images: True
+  recon_image_dir: "./recon_images-bank_heist-v18"
+  save_recon_after_frames: 1_000_000
+  stop_save_recon_after_frames: 1_100_000  
+
+seed: 42
