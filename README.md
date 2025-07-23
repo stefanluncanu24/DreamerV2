@@ -64,10 +64,5 @@ You can monitor training progress and results if you have `wandb` configured.
 This project requires the following Python libraries. You can install them using pip:
 
 ```bash
-pip install torch torchvision
-pip install gymnasium[atari] ale-py
-pip install pyyaml
-pip install wandb
-pip install tqdm
-pip install opencv-python
+pip install -r requirements.txt
 ```
