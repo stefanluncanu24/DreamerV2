@@ -1,6 +1,6 @@
 # DreamerV2 PyTorch Implementation
 
-This project is a PyTorch implementation of the DreamerV2 agent, a reinforcement learning algorithm that learns a world model from pixels and uses it to train an actor-critic agent in imagined trajectories. This implementation is designed for solving Atari 2600 environments from the Gymnasium library.
+This project is a PyTorch implementation of the DreamerV2 agent, a reinforcement learning algorithm that learns a world model from pixels and uses it to train an actor-critic agent in imagined trajectories. This implementation is based on the paper [Mastering Diverse Domains through World Models](https://arxiv.org/pdf/2010.02193) and was inspired by the original implementation [here](https://github.com/danijar/dreamerv2) and another excellent implementation [here](https://github.com/jsikyoon/dreamer-torch). 
 
 ## Project Structure
 
@@ -28,7 +28,10 @@ The repository is organized as follows:
 │   │   └── tools.py
 │   └── train.py        # Main script for training the agent.
 ...
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> updated readme
 
 ## Usage
 
