@@ -1,0 +1,9 @@
+torch
+torchvision
+gymnasium[atari]
+ale-py
+pyyaml
+wandb
+tqdm
+opencv-python
+matplotlib
