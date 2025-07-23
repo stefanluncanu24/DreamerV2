@@ -28,10 +28,6 @@ The repository is organized as follows:
 │   │   └── tools.py
 │   └── train.py        # Main script for training the agent.
 ...
-<<<<<<< HEAD
-```
-=======
->>>>>>> updated readme
 
 ## Usage
 
