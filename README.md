@@ -1,7 +1,6 @@
 # DreamerV2 PyTorch Implementation
 
 <p align="center">
-  <img src="videos/pong.gif"       alt="Pong gameplay"       width="220" />
   <img src="videos/bank_heist.gif" alt="Bank Heist gameplay" width="220" />
   <img src="videos/freeway.gif"    alt="Freeway gameplay"    width="220" />
   <img src="videos/boxing.gif"     alt="Boxing gameplay"     width="220" />
