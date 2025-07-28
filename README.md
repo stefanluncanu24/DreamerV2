@@ -1,7 +1,12 @@
 # DreamerV2 PyTorch Implementation
 
-
-
+<p align="center">
+  <img src="videos/pong.gif"       alt="Pong gameplay"       width="220" />
+  <img src="videos/bank_heist.gif" alt="Bank Heist gameplay" width="220" />
+  <img src="videos/freeway.gif"    alt="Freeway gameplay"    width="220" />
+  <img src="videos/boxing.gif"     alt="Boxing gameplay"     width="220" />
+</p
+  
 This project is a PyTorch implementation of the DreamerV2 agent, a reinforcement learning algorithm that learns a world model from pixels and uses it to train an actor-critic agent in imagined trajectories. This implementation is based on the paper [Mastering Diverse Domains through World Models](https://arxiv.org/pdf/2010.02193) and was inspired by the original implementation [here](https://github.com/danijar/dreamerv2) and another excellent implementation [here](https://github.com/jsikyoon/dreamer-torch). 
 
 ## Project Structure
